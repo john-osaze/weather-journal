@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no">
+	<title>Weather Journal App</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+	<header>
+		<nav class="container">
+			<h2 class="logo">Weather Journal</h2>
+		</nav>
+	</header>
+
+	<section class="weather-data">
+		<div class="container">
+			<dl class="weather-data-list">
+				<dd class="weather-data-item">
+					<h1 class="temperature"></h1>
+				</dd>
+				<dd class="weather-data-item">
+					<h3 class="city-name"></h3>
+					<p class="time-date"></p>
+				</dd>
+				<dd class="weather-data-item">
+					<img src="" alt="" class="weather-icon">
+					<span class="weather-condition"></span>
+				</dd>
+			</dl>
+		</div>
+	</section>
+
+	<section class="sidebar">
+		<div class="sidebar-wrapper container">
+			<form class="weather-form">
+				<div class="input-location">
+					<input type="text" name="" id="zipCode" placeholder="Enter zip code here">
+				</div>
+	
+				<div class="input-feeling">
+					<textarea name="" id="feeling" cols="20" rows="10" placeholder="Enter your feeling here"></textarea>
+				</div>
+
+				<div class="generate-btn">
+					<input type="submit" value="Generate" class="btn" id="generateBtn">
+				</div>
+			</form>
+
+			<div class="weather-details">
+				<h2 class="title">More Details</h2>
+				<ul class="details-list">
+					<li class="detail-item">
+						<strong class="detail-property">Humidity</strong>
+						<small class="detail-value"></small>
+					</li>
+					<li class="detail-item">
+						<strong class="detail-property">Wind</strong>
+						<small class="detail-value"></small>
+					</li>
+					<li class="detail-item">
+						<strong class="detail-property">Pressure</strong>
+						<small class="detail-value"></small>
+					</li>
+					<li class="detail-item">
+						<strong class="detail-property">Feeling</strong>
+						<small class="detail-value" id="feeling-output"></small>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<script src="./app.js"></script>
+</body>
+
+</html>
